@@ -13,6 +13,5 @@ RUN /bin/bash -c '. /.nvm/nvm.sh && nvm install v0.10.20 && nvm use v0.10.20 && 
 ADD src src
 ADD init.sh init.sh
 RUN chmod +x init.sh
-
-
+ENTRYPOINT ["./init.sh"]
 
