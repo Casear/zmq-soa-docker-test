@@ -6,10 +6,6 @@ else
 	echo "node_version is undefined."
     exit
 fi
-
 pushd src
 npm install
-npm install -g mocha 
-npm install chai
-npm install should
-mocha -R xunit | grep "<" > mocha.xml
+npm test
